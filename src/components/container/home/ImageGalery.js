@@ -11,9 +11,9 @@ function ImageGalery() {
         };
     });
     return (
-        <div className="flex items-center">
+        <div className="flex items-center flex-1">
             <div className="flex items-center justify-center border border-slate-300 rounded-full mr-2 h-[30px] w-[30px]">{"<"}</div>
-            <div className="flex gap-10 overflow-clip flex-1">
+            <div className="flex gap-10 overflow-auto flex-1">
                 {image_list.map((image, id) => (
                     <img key={id} src={image.thumbnail} alt="" width={200} height={175} className={`border rounded`} />
                 ))}
